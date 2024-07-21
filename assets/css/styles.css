@@ -115,7 +115,7 @@ img {
 .main {
   overflow: hidden;
 }
-                                                                                               /*start*/
+                                                            /*start*/
 /*=============== HEADER & NAV ===============*/
 .header{
     position: fixed;
@@ -234,7 +234,7 @@ img {
   right: 1rem;
   opacity: .5;
 }
-.home__image{
+.home__images{
   position: relative;
   display: grid;
   justify-items: center;
@@ -255,7 +255,12 @@ filter: var(--shadow-big-img);
   width: 280px;
   z-index: 2;
 }
-
+.home__dish{
+  max-width: initial;
+  width: 320px;
+  position: absolute;
+  bottom: -2.5rem;
+}
 
 /*=============== BUTTON ===============*/
 .button{
