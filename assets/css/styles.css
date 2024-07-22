@@ -261,6 +261,35 @@ filter: var(--shadow-big-img);
   position: absolute;
   bottom: -2.5rem;
 }
+.home__potato-1{
+left: -1rem;
+top: .75rem;
+}
+.home__potato-2{
+  right: -.75rem;
+  bottom: -2rem;
+  rotate: 90deg;
+}
+.home__tomato-1{
+  width: 40px;
+  top: -1rem;
+  right: 6rem;
+}
+.home__tomato-2{
+  width: 40px;
+  left: 5.5rem;
+  bottom: -1.5rem;
+}
+.home__lettuce-1{
+  right:-2rem;
+  top: 2.5rem;
+  transform: scale(-1);
+}
+.home__lettuce-2{
+left: -2rem;
+bottom: 1rem;
+}
+
 
 /*=============== BUTTON ===============*/
 .button{
