@@ -21,7 +21,7 @@ if(navClose){
 const navlink = document.querySelectorAll('.nav__link')
 
 const linkAction = ()=>{
-    const navMenu =document.getElementById('nav-menu')
+    const navMenu = document.getElementById('nav-menu')
     navMenu.classList.remove('show-menu')
 }
 navlink.forEach(n=>n.addEventListener('click',linkAction))
