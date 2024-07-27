@@ -441,6 +441,25 @@ margin-bottom:  .5rem;
   filter: var(--shadow-big-img);
 }
 /*=============== CONTACT ===============*/
+.contact__container{
+  position: relative;
+  background-color: var(--second-color);
+  padding-top: 3.5rem;
+  border-radius: 3rem;
+  overflow: hidden;
+}
+.contact__content{
+  row-gap: 3rem;
+}
+.contact__container .section__title,
+.contact__title,
+.contact__info{
+  color: var(--white-color);
+}
+.contact__data{
+  text-align: center;
+  row-gap: 2rem;
+}
 
 
 /*=============== FOOTER ===============*/
