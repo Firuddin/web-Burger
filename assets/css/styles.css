@@ -209,7 +209,9 @@ box-shadow: 0 4px 16px hsla(22, 100%, 8%, .1)
 }
 
 /* Active link */
-
+.active-link::after{
+width: 60%;
+}
 
 /*=============== HOME ===============*/
 .home__container{
@@ -595,9 +597,119 @@ opacity: .5;
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-
+@media screen and (max-width:330px) {
+  .container{
+    margin-inline: 1rem;
+  }
+  .home__title{
+    font-size: 2.5rem;
+  }
+  .home__burger{
+    width: 210px;
+  }
+  .home__dish{
+    width: 250px;
+    bottom: -2rem;
+  }
+  .recipe__container{
+    column-gap: 5rem;
+  }
+  .recipe__img{
+    left: -8rem;
+  }
+  .popular__container{
+    grid-template-columns: 160px;
+    justify-content: center;
+  }
+  .footer__social{
+    grid-column: 1;
+  }
+  .footer__content{
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+}
 
 /* For medium devices */
+@media screen and (min-width:540px) {
+  .home__container,
+  .delivery__container{
+    grid-template-columns: 360px;
+    justify-content: center;
+  }
+  .recipe__img{
+    position: initial;
+  }
+  .recipe__container{
+    grid-template-columns: 200px 230px;
+    justify-content: center;
+    column-gap: 3rem;
+  }
+  .popular__container{
+    grid-template-columns: repeat(2,160px);
+    justify-content: center;
+  }
+  .contact{
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
 
+
+@media screen and (min-width:768px) {
+  .popular__container{
+    grid-template-columns: repeat(3, 160px);
+  } 
+  .footer__social{
+grid-column: initial;
+}
+.footer__content{
+  grid-template-columns: repeat(3,1fr);
+  align-items: center;
+}
+.footer__link:nth-child(1){
+  justify-self: start;
+}
+.footer__link:nth-child(2){
+  order: 2;
+  justify-self: end;
+}
+}
 
 /* For large devices */
+@media screen and (min-width:1150px) {
+  .container{
+    margin-inline: auto;
+  }
+  .section{
+    padding-block: 7rem 2rem;
+  }
+  .section__title{
+    margin-bottom: 4.5rem;
+  }
+  .nav{
+    height: calc(var(--header-height)+2rem);
+  }
+  .nav__toggle,
+  .nav__close{
+    display: none;
+  }
+  .nav__list{
+    flex-direction: row;
+    column-gap: 4rem;
+  }
+  .home__container{
+    grid-template-columns: 430px 605px;
+    align-items: center;
+    column-gap: 4rem  ;
+    padding-block: 7rem 4rem;
+  }
+}
+
+
+
+
+
+
+
+
